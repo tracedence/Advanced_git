@@ -31,4 +31,4 @@ Git stash
     --> git reset <filename> move the from staging area to working area with changes to made.
 
 # testing string
---> rerere is ok
+--> rerere super useful
