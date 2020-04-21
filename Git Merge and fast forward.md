@@ -19,3 +19,6 @@ no need of merge commit
         How use rerere
             -> git config rerere.enabled true ==> for current project
             -> --global flag for all projects
+
+# testing merge command
+--> for testing purpose
