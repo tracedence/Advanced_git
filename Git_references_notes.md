@@ -23,6 +23,19 @@ Types of references
             ==> it can also point to commit(detached HEAD)
             ==> points to name of the branch
 
-Differneces between branch and tag pointer
+## Differneces between branch and tag pointer
     -> branch pointer moves with every commit
     -> tag pointer is static(doesn't change)
+
+## HEAD_LESS/ DETACHED HEAD
+    -> detached state show when you checkout a specific commit rather than branch or tag.
+    -> git move HEAD pointer to this commit
+    -> if made any commit in DETACHED head then there is no referencing point to these commit
+            ==> if no new branch create with last commit then these commit will collected into garbage collected. 
+                these commit are callled dangling commit(ref log), Git does periodic garbage collection and will
+                eventuall delete any commits that don't have any references pointing to them.
+
+    To save the work in DETACHED state
+    -> By createing new branch pointing to the last commit you made in detached state
+            ==> git checkout -b <new branch_name> < last commit>
+            why last commit-> because last commit know all its parent
