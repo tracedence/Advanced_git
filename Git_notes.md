@@ -29,3 +29,6 @@ Git stash
     ##To View the content of the staging Area
     --> staging area contains list of files as well as the SHA1 of this files => To view detail "git ls-files -s"
     --> git reset <filename> move the from staging area to working area with changes to made.
+
+# testing string
+--> rerere is ok
